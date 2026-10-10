@@ -1,14 +1,27 @@
 [project]
 name = "nextdoorads-mcp"
 version = "0.1.0"
-description = "MCP server for the Nextdoor Ads API"
+description = "MCP server for Nextdoor Ads: campaigns, ad groups, creatives and reports."
 readme = "README.md"
 requires-python = ">=3.12,<3.13"
 license = { text = "MIT" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business",
+]
 dependencies = [
     "httpx>=0.28.1,<0.29",
     "mcp>=2.3,<3",
 ]
+
+[project.urls]
+Homepage = "https://github.com/RosenAdvertising/nextdoorads-mcp"
+Repository = "https://github.com/RosenAdvertising/nextdoorads-mcp"
+Issues = "https://github.com/RosenAdvertising/nextdoorads-mcp/issues"
 
 [project.scripts]
 nextdoorads-mcp-setup = "nextdoorads_mcp.setup:setup"
